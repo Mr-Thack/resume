@@ -39,7 +39,7 @@ CS Student (**Junior @ GT**) focused on **Fullstack Web Dev** + **AI Integration
 ## Cobb County School District, Automation Engineer (Sort of an Intern, but not exactly)
 
 - Fall of 2024
-- 514 Glover Sreet SE, Marietta, GA
+- 514 Glover Street SE, Marietta, GA
 - **Saved ~130 hrs/year** of manual review while retaining **99%+ accuracy/validity with AI**
 - Made **quasi-reasoning pipeline (before widespread reasoning models)** while costing <**10 cents/month**
 - Packaged a reproducible script and delivered an [internal presentation](https://GitHub.com/Mr-Thack/SummarizerPresentation)

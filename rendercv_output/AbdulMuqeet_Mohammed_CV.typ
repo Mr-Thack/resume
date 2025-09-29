@@ -536,7 +536,7 @@ Summer of 2025
 #v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([#strong[Saved \~130 hrs\/year] of manual review while retaining #strong[99\%+ accuracy\/validity with AI]],[Made #strong[quasi-reasoning pipeline \(before widespread reasoning models\)] while costing <#strong[10 cents\/month]],[Packaged a reproducible script and delivered an #link("https://GitHub.com/Mr-Thack/SummarizerPresentation")[internal presentation]],)
   ],
   right-content: [
-    514 Glover Sreet SE, Marietta, GA
+    514 Glover Street SE, Marietta, GA
 
 Fall of 2024
 

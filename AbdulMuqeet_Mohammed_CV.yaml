@@ -38,7 +38,7 @@ cv:
       - company: Cobb County School District
         position: Automation Engineer (Sort of an Intern, but not exactly)
         date: Fall of 2024
-        location: 514 Glover Sreet SE, Marietta, GA
+        location: 514 Glover Street SE, Marietta, GA
         url: 'https://github.com/Mr-Thack/Summarizer'
         summary: 'Wrote Python pipeline calling the OpenAI API to sort, categorize, and summarize enhancement requests for the CTLS platform.'
         highlights:
