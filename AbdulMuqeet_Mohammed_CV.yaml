@@ -11,47 +11,50 @@ cv:
       username: Mr-Thack
   sections:
     profile:
-      - 'CS Student (**Junior @ GT**); **Full-stack Web & Dev** with an attitude of **AI Automation**'
-      - "Focus: SvelteKit, Supabase, TypeScript, FastAPI, Python, LLM's"
+      - 'CS Student (**Junior @ GT**) focused on **Fullstack Web Dev** + **AI Integration**, quickly and efficiently shipping sites to reduce manual labor.'
+    skills:
+      - '**Excellent**: SvelteKit, FastAPI, Supabase, SQL, Tailwind, Shadcn, OpenRouter + OpenAI, Docker, Git, Linux, Netlify, TS, Bash, C/C++' 
+      - '**Proficient**: HTML/CSS, NextJS, React, Django, Node.js, PostgreSQL, Firebase, PHP, Go, Rust, Java, JQuery, Haskell, Nim, Lua, X86 ASM'
     education:
       - institution: Georgia Tech
-        area: Computer Science (System Architecture & Information Networks)
+        area: 'Computer Science (Threads: **System Architecture & Information Networks**) (GPA: 3.63)'
         degree: BS
-        date:
         start_date: 2025-08
         end_date: present
         location: Atlanta, GA
-        summary: 'Junior standing (60+ credits) (Graduating Next Year)'
         highlights:
-          - 'Relevant coursework: DSA, OOP, Program Design, Computer Architecture'
-      - institution: Kennesaw Mountain High School
-        area: High School Diploma
-        degree: HS
-        start_date: 2022-08
-        end_date: 2025-05
-        location: Kennesaw, GA 
-        summary:
-        highlights: 
-          - 'STAR Student (highest SAT); Top of my class (depending on the metric)'
-    experience:
+          - 'Junior by Standing (60+ credits)'
+          - 'Relevant Courses: **DSA, OOP, Program Organization + Design, Computer Architecture**'
+    relevant_experience:
       - company: Masjid Suffah — Maktab Portal
         position: Full-stack Developer (Volunteer)
         date: Summer of 2025
         location: Kennesaw, GA
         url: 'https://masjidsuffah.netlify.app/maktab'
-        summary: 'Built full-stack portal (Supabase, SvelteKit, ShadcnUI / Tailwind) to manage enrollments and custom payment logic for ~60 students'
+        summary: 'Built **full-stack portal** to manage enrollments and custom payment logic for **~60 students**'
         highlights:
-          - 'Automated admin workflows and reduced manual processing to nearly nothing.'
-          - 'Implemented role-based access, reporting, and documentation. [Repo Here](github.com/Mr-Thack/suffah)'
+          - 'Automated admin workflows and **reduced manual processing to nearly nothing.**'
+          - 'Implemented role-based access, reporting, and documentation using **Modern Scalable Technologies**'
       - company: Cobb County School District
         position: Automation Engineer (Sort of an Intern, but not exactly)
         date: Fall of 2024
         location: 514 Glover Sreet SE, Marietta, GA
         url: 'https://github.com/Mr-Thack/Summarizer'
-        summary: 'Authored Python pipeline calling the OpenAI API to sort, categorize, and summarize enhancement requests for the CTLS platform.'
+        summary: 'Wrote Python pipeline calling the OpenAI API to sort, categorize, and summarize enhancement requests for the CTLS platform.'
         highlights:
-          - 'Saved ~4 hrs/week (~130 hrs/year) of manual review.'
+          - '**Saved ~130 hrs/year** of manual review while retaining **99%+ accuracy/validity with AI**'
+          - 'Made **quasi-reasoning pipeline (before widespread reasoning models)** while costing <**10 cents/month**'
           - 'Packaged a reproducible script and delivered an [internal presentation](https://GitHub.com/Mr-Thack/SummarizerPresentation)'
+      - company: MQM Party of Pakistan
+        position: Frontend Dev (Paid)
+        date: Summer of 2024
+        location: Kennesaw, GA 
+        url: 'https://altafhussain90.org/'
+        summary: Donation website for the current leader of the MQM Political Party of Pakistan.
+        highlights:
+          - 'Designed **globally-cached**, **mobile-responsive**, **semi-dynamic** site while dealing with **multi-media**'
+          - 'Integrated with payment processor (Stripe) to handle **large-scale high-frequency transactions**'
+          - '*Note: Site might temporarily be offline soon due to new stipulations from payment provider;* [Code Here](https://github.com/Mr-Thack/AltafHussain90)'
       - company: Masjid Suffah — Website
         position: Ongoing Maintainer (Volunteer)
         date:
@@ -61,100 +64,39 @@ cv:
         url: 'https://masjidsuffah.com'
         summary: Maintain information and prayer timings website
         highlights:
-          - 'Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to ensure 100% uptime and reliability.'
+          - 'Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to **ensure 100% uptime and reliability**.'
           - 'Performed bug fixes and incremental feature updates.'
-      - company: MS Cleaners
-        position: Clerk + Machine Maintenance
-        date: Summer of 2024
-        location: 4047 Canton Road,\n Marietta, GA
-        summary: 'Handled customer interactions, inventory tagging, and light machine maintenance'
+    relevant_projects:
+      # I couldn't get the custom mappings to work in Normal Mode
+      # So, I've just reused Experience Mode
+      - company: Kerplunk
+        date: Summer-Fall of 2023
+        url: https://github.com/Mr-Thack/kerplunk
+        position: 'Real-time messaging & group management platform for classrooms.'
         highlights:
-          - 'Streamlined turnaround through improving workflow and repairing machinery.'
-          - 'Became proficient in handling customers'
-      - company: Computer Repairs Plus 
-        position: Computer Technician
-        date: Summer of 2022
-        location: 3327 Cobb Pkwy NW, Acworth, GA
-        url: 'https://github.com'
-        summary: 'Diagnosed and restored desktops and laptops, doing software fixes, hardware swaps, upgrades, and refurbishing for reuse and recycling.'
+          - 'Backend lead (clean REST API, Websockets with REST backup, custom Protobuf-backed DB, homebuilt Alpine server) + functional Frontend work (non-design)'
+          - 'Implemented **real-time notifications, messaging and groups** while **running quickly on ancient hardware**'
+      - company: SenaTowing
+        date: Summer of 2025
+        url: 'https://SenaTowing.com/'
+        position: 'Volunteered to build mobile-first website for local emergency towing business.'
         highlights:
-          - 'Processed 30+ rigs a day quickly and correctly'
-          - 'Was given a paid return offer'
-    projects:
-      - name: Kerplunk
-        date: Summer to Fall of 2023
-        summary: Real-time messaging & group management platform for classrooms.
-        highlights:
-          - 'Backend lead (FastAPI, custom Protobuf-backed DB, deployed on self-hosted and homebuilt Alpine Machine)'
-          - 'Frontend work (mostly functional; not design)'
-          - 'Integrated real-time notifications and group management; repo: github.com/Mr-Thack/kerplunk'
-      - name: Summarizer / SummarizerPresentation
-        date: Fall of 2024
-        location:
-        summary: NLP pipeline and presentation demo for county enhancement request automation.
-        highlights:
-          - 'NLP demo + Reveal.js presentation demonstrating the automation pipeline used for Cobb County School District; repo: github.com/Mr-Thack/SummarizerPresentation'
-      - name: AICAD (prototype)
-        date:
-        start_date: 2025-09
-        end_date: present
-        location:
-        summary: Prototype AI-assisted CAD sketch → render pipeline.
-        highlights:
-          - 'Sketch-based CAD prototype that calls OpenRouter + large multimodal model (demo pipeline); listed as a research prototype; repo: github.com/Mr-Thack/AICAD'
-      - name: SenaTowing
-        date:
-        start_date:
-        end_date:
-        location:
-        summary: Mobile-responsive website for local towing business.
-        highlights:
-          - 'Built SEO-friendly, fast-loading, mobile-first site for emergency towing'
-          - 'Attractive but streamlined designed'
-          - 'repo: github.com/Mr-Thack/SenaTowing'
-      - name: ManimTTS-Testing
-        date: Fall of 2025
-        location:
-        summary: Manim extension to sync TTS audio with animations.
-        highlights:
-          - 'Extension integrates local TTS models with Manim to produce narrated, timestamped animations'
-          - 'repo: github.com/Mr-Thack/ManimTTS-Testing'
-      - name: Silogue
-        date: Spring of 2023
-        location:
-        summary: Lightweight webserver framework in Nim focused on developer experience.
-        highlights:
-          - 'Designed for quick onboarding and small services'
-          - 'Emphasizes macro-based ergonomics and performance'
-          - 'repo: github.com/Mr-Thack/Silogue'
-      - name: SHA256VK (research/prototype)
-        date: Fall of 2025
-        location:
-        summary: SHA256 implementation using Vulkan + C++ (Kompute).
-        highlights:
-          - 'Exploratory implementation (performance/accuracy still under investigation)'
-          - 'repo: github.com/Mr-Thack/SHA256VK'
-    skills:
-      - label: Languages
-        details: 'JavaScript/TypeScript, SQL, Python, Bash, C++, X86 ASM, Nim, Haskell'
-      - label: Frameworks & Tools
-        details: 'SvelteKit, FastAPI, Supabase, Tailwind / ShadcnUI, Bulma, Bootstrap, Reveal.js, Manim, Kompute, Docker, Git, Linux'
-      - label: AI / NLP
-        details: 'OpenAI API, LLM prompt engineering, Ollama Configuration, NLP pipelines, local TTS models'
-      - label: Deployment & Ops
-        details: 'GoDaddy, Netlify, self-hosted servers, CI/CD basics, performance debugging'
-    extracurricular_activities:
-      - bullet: 'Volunteer web developer / maintainer for local Masjid projects (site maintenance, payment portal, deployment).'
-      - bullet: "I'm the computer repair guy (fixed 5+ friends' laptops/computers)"
+          - 'Built **static, SEO-friendly, rapid-loading, mobile-responsive site**'
+          - '**Modern and Attractive UI + Hyper-Streamlined UX** with [code here](https://github.com/Mr-Thack/SenaTowing)'
+      - company: Other Projects
+        position: Please follow the [link to my GitHub](https://github.com/Mr-Thack) to see my other projects or to see these in more depth
+    other_experiences:
+      - number: "**Clerk + Machine Maintenance** at MS Cleaners during **Summer of 2024**. Handled customer interactions, inventory, and some machine maintenance. **Streamlined workflow by repairing machinery + modernizing**."
+      - number: "**Computer Repair Technician** at Computers Repair Plus during **Summer of 2022**. Diagnosed and restored **30+ desktops and laptops daily**.\n Software fixes, hardware swaps/upgrades, refurbishing for reuse, and recycling."  
 
 design:
   theme: me
   page:
     size: us-letter
-    top_margin: 2cm
-    bottom_margin: 2cm
-    left_margin: 2cm
-    right_margin: 2cm
+    top_margin: 1cm
+    bottom_margin: 1cm
+    left_margin: 1cm
+    right_margin: 1cm
     show_page_numbering: false 
     show_last_updated_date: true
   colors:
@@ -178,9 +120,9 @@ design:
     name_font_size: 30pt
     name_bold: true
     photo_width: 3.5cm
-    vertical_space_between_name_and_connections: 0.7cm
-    vertical_space_between_connections_and_first_section: 0.7cm
-    horizontal_space_between_connections: 0.45cm
+    vertical_space_between_name_and_connections: 0.3cm
+    vertical_space_between_connections_and_first_section: 0.3cm
+    horizontal_space_between_connections: 1cm
     connections_font_family: Source Sans 3
     separator_between_connections: ''
     use_icons_for_connections: true
@@ -193,12 +135,12 @@ design:
     small_caps: false
     line_thickness: 0.5pt
     vertical_space_above: 0.5cm
-    vertical_space_below: 0.3cm
+    vertical_space_below: 0.25cm
   entries:
-    date_and_location_width: 4.15cm
-    left_and_right_margin: 0.2cm
+    date_and_location_width: 3.0cm
+    left_and_right_margin: 0.1cm
     horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 1.2em
+    vertical_space_between_entries: 1em
     allow_page_break_in_sections: true
     allow_page_break_in_entries: true
     short_second_row: false
@@ -231,8 +173,9 @@ design:
       date_and_location_column_template: |-
         LOCATION
         DATE
+        URL
     experience_entry:
-      main_column_first_row_template: '**COMPANY**, POSITION'
+      main_column_first_row_template: '**COMPANY**: POSITION'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
@@ -291,5 +234,5 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: '2025-09-25'
+  date: '2025-09-28'
   bold_keywords: []

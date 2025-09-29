@@ -10,112 +10,74 @@
 
 # Profile
 
-CS Student (**Junior @ GT**); **Full-stack Web & Dev** with an attitude of **AI Automation**
+CS Student (**Junior @ GT**) focused on **Fullstack Web Dev** + **AI Integration**, quickly and efficiently shipping sites to reduce manual labor.
 
-Focus: SvelteKit, Supabase, TypeScript, FastAPI, Python, LLM's
+# Skills
+
+**Excellent**: SvelteKit, FastAPI, Supabase, SQL, Tailwind, Shadcn, OpenRouter + OpenAI, Docker, Git, Linux, Netlify, TS, Bash, C/C++
+
+**Proficient**: HTML/CSS, NextJS, React, Django, Node.js, PostgreSQL, Firebase, PHP, Go, Rust, Java, JQuery, Haskell, Nim, Lua, X86 ASM
 
 # Education
 
-## Georgia Tech, BS in Computer Science (System Architecture & Information Networks)
+## Georgia Tech, BS in Computer Science (Threads: **System Architecture & Information Networks**) (GPA: 3.63)
 
 - Aug 2025 – Now
 - Atlanta, GA
-- Relevant coursework: DSA, OOP, Program Design, Computer Architecture
+- Junior by Standing (60+ credits)
+- Relevant Courses: **DSA, OOP, Program Organization + Design, Computer Architecture**
 
-## Kennesaw Mountain High School, HS in High School Diploma
-
-- Aug 2022 – May 2025
-- Kennesaw, GA
-- STAR Student (highest SAT); Top of my class (depending on the metric)
-
-# Experience
+# Relevant Experience
 
 ## Masjid Suffah — Maktab Portal, Full-stack Developer (Volunteer)
 
 - Summer of 2025
 - Kennesaw, GA
-- Automated admin workflows and reduced manual processing to nearly nothing.
-- Implemented role-based access, reporting, and documentation. [Repo Here](github.com/Mr-Thack/suffah)
+- Automated admin workflows and **reduced manual processing to nearly nothing.**
+- Implemented role-based access, reporting, and documentation using **Modern Scalable Technologies**
 
 ## Cobb County School District, Automation Engineer (Sort of an Intern, but not exactly)
 
 - Fall of 2024
 - 514 Glover Sreet SE, Marietta, GA
-- Saved ~4 hrs/week (~130 hrs/year) of manual review.
+- **Saved ~130 hrs/year** of manual review while retaining **99%+ accuracy/validity with AI**
+- Made **quasi-reasoning pipeline (before widespread reasoning models)** while costing <**10 cents/month**
 - Packaged a reproducible script and delivered an [internal presentation](https://GitHub.com/Mr-Thack/SummarizerPresentation)
+
+## MQM Party of Pakistan, Frontend Dev (Paid)
+
+- Summer of 2024
+- Kennesaw, GA
+- Designed **globally-cached**, **mobile-responsive**, **semi-dynamic** site while dealing with **multi-media**
+- Integrated with payment processor (Stripe) to handle **large-scale high-frequency transactions**
+- *Note: Site might temporarily be offline soon due to new stipulations from payment provider;* [Code Here](https://github.com/Mr-Thack/AltafHussain90)
 
 ## Masjid Suffah — Website, Ongoing Maintainer (Volunteer)
 
 - June 2024 – Now
 - Kennesaw, GA
-- Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to ensure 100% uptime and reliability.
+- Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to **ensure 100% uptime and reliability**.
 - Performed bug fixes and incremental feature updates.
 
-## MS Cleaners, Clerk + Machine Maintenance
+# Relevant Projects
 
-- Summer of 2024
-- 4047 Canton Road,\n Marietta, GA
-- Streamlined turnaround through improving workflow and repairing machinery.
-- Became proficient in handling customers
+## Kerplunk, Real-time messaging & group management platform for classrooms.
 
-## Computer Repairs Plus, Computer Technician
+- Summer-Fall of 2023
+- Backend lead (clean REST API, Websockets with REST backup, custom Protobuf-backed DB, homebuilt Alpine server) + functional Frontend work (non-design)
+- Implemented **real-time notifications, messaging and groups** while **running quickly on ancient hardware**
 
-- Summer of 2022
-- 3327 Cobb Pkwy NW, Acworth, GA
-- Processed 30+ rigs a day quickly and correctly
-- Was given a paid return offer
+## SenaTowing, Volunteered to build mobile-first website for local emergency towing business.
 
-# Projects
+- Summer of 2025
+- Built **static, SEO-friendly, rapid-loading, mobile-responsive site**
+- **Modern and Attractive UI + Hyper-Streamlined UX** with [code here](https://github.com/Mr-Thack/SenaTowing)
 
-## Kerplunk
+## Other Projects, Please follow the [link to my GitHub](https://github.com/Mr-Thack) to see my other projects or to see these in more depth
 
-- Summer to Fall of 2023
-- Backend lead (FastAPI, custom Protobuf-backed DB, deployed on self-hosted and homebuilt Alpine Machine)
-- Frontend work (mostly functional; not design)
-- Integrated real-time notifications and group management; repo: github.com/Mr-Thack/kerplunk
 
-## Summarizer / SummarizerPresentation
+# Other Experiences
 
-- Fall of 2024
-- NLP demo + Reveal.js presentation demonstrating the automation pipeline used for Cobb County School District; repo: github.com/Mr-Thack/SummarizerPresentation
-
-## AICAD (prototype)
-
-- Sept 2025 – Now
-- Sketch-based CAD prototype that calls OpenRouter + large multimodal model (demo pipeline); listed as a research prototype; repo: github.com/Mr-Thack/AICAD
-
-## SenaTowing
-
-- Built SEO-friendly, fast-loading, mobile-first site for emergency towing
-- Attractive but streamlined designed
-- repo: github.com/Mr-Thack/SenaTowing
-
-## ManimTTS-Testing
-
-- Fall of 2025
-- Extension integrates local TTS models with Manim to produce narrated, timestamped animations
-- repo: github.com/Mr-Thack/ManimTTS-Testing
-
-## Silogue
-
-- Spring of 2023
-- Designed for quick onboarding and small services
-- Emphasizes macro-based ergonomics and performance
-- repo: github.com/Mr-Thack/Silogue
-
-## SHA256VK (research/prototype)
-
-- Fall of 2025
-- Exploratory implementation (performance/accuracy still under investigation)
-- repo: github.com/Mr-Thack/SHA256VK
-
-# Skills
-
-- Languages: JavaScript/TypeScript, SQL, Python, Bash, C++, X86 ASM, Nim, Haskell
-- Frameworks & Tools: SvelteKit, FastAPI, Supabase, Tailwind / ShadcnUI, Bulma, Bootstrap, Reveal.js, Manim, Kompute, Docker, Git, Linux
-- AI / NLP: OpenAI API, LLM prompt engineering, Ollama Configuration, NLP pipelines, local TTS models
-- Deployment & Ops: GoDaddy, Netlify, self-hosted servers, CI/CD basics, performance debugging
-# Extracurricular Activities
-
-- Volunteer web developer / maintainer for local Masjid projects (site maintenance, payment portal, deployment).
-- I'm the computer repair guy (fixed 5+ friends' laptops/computers)
+- **Clerk + Machine Maintenance** at MS Cleaners during **Summer of 2024**. Handled customer interactions, inventory, and some machine maintenance. **Streamlined workflow by repairing machinery + modernizing**.
+- **Computer Repair Technician** at Computers Repair Plus during **Summer of 2022**. Diagnosed and restored **30+ desktops and laptops daily**.
+ Software fixes, hardware swaps/upgrades, refurbishing for reuse, and recycling.

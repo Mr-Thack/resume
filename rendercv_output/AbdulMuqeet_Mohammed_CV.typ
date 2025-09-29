@@ -19,7 +19,7 @@
 #let design-section-titles-font-size = 1.4em
 #let design-section-titles-type = "with-parial-line"
 #let design-section-titles-vertical-space-above = 0.5cm
-#let design-section-titles-vertical-space-below = 0.3cm
+#let design-section-titles-vertical-space-below = 0.25cm
 #let design-section-titles-small-caps = false
 #let design-links-use-external-link-icon = true
 #let design-text-font-size = 10pt
@@ -33,10 +33,10 @@
 #let design-header-name-font-size = 30pt
 #let design-header-name-bold = true
 #let design-header-connections-font-family = "Source Sans 3"
-#let design-header-vertical-space-between-name-and-connections = 0.7cm
-#let design-header-vertical-space-between-connections-and-first-section = 0.7cm
+#let design-header-vertical-space-between-name-and-connections = 0.3cm
+#let design-header-vertical-space-between-connections-and-first-section = 0.3cm
 #let design-header-use-icons-for-connections = true
-#let design-header-horizontal-space-between-connections = 0.45cm
+#let design-header-horizontal-space-between-connections = 1cm
 #let design-header-separator-between-connections = ""
 #let design-header-alignment = center
 #let design-highlights-summary-left-margin = 0cm
@@ -45,15 +45,15 @@
 #let design-highlights-left-margin = 0.4cm
 #let design-highlights-vertical-space-between-highlights = 0.25cm
 #let design-highlights-horizontal-space-between-bullet-and-highlights = 0.5em
-#let design-entries-vertical-space-between-entries = 1.2em
-#let design-entries-date-and-location-width = 4.15cm
+#let design-entries-vertical-space-between-entries = 1em
+#let design-entries-date-and-location-width = 3.0cm
 #let design-entries-allow-page-break-in-entries = true
 #let design-entries-horizontal-space-between-columns = 0.1cm
-#let design-entries-left-and-right-margin = 0.2cm
-#let design-page-top-margin = 2cm
-#let design-page-bottom-margin = 2cm
-#let design-page-left-margin = 2cm
-#let design-page-right-margin = 2cm
+#let design-entries-left-and-right-margin = 0.1cm
+#let design-page-top-margin = 1cm
+#let design-page-bottom-margin = 1cm
+#let design-page-left-margin = 1cm
+#let design-page-right-margin = 1cm
 #let design-page-show-last-updated-date = true
 #let design-page-show-page-numbering = false
 #let design-links-underline = true
@@ -466,11 +466,19 @@
 
 
 #one-col-entry(
-  content: [CS Student \(#strong[Junior \@ GT]\); #strong[Full-stack Web & Dev] with an attitude of #strong[AI Automation]]
+  content: [CS Student \(#strong[Junior \@ GT]\) focused on #strong[Fullstack Web Dev] + #strong[AI Integration], quickly and efficiently shipping sites to reduce manual labor.]
+)
+
+
+== Skills
+
+
+#one-col-entry(
+  content: [#strong[Excellent]: SvelteKit, FastAPI, Supabase, SQL, Tailwind, Shadcn, OpenRouter + OpenAI, Docker, Git, Linux, Netlify, TS, Bash, C\/C++]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [Focus: SvelteKit, Supabase, TypeScript, FastAPI, Python, LLM's]
+  content: [#strong[Proficient]: HTML\/CSS, NextJS, React, Django, Node.js, PostgreSQL, Firebase, PHP, Go, Rust, Java, JQuery, Haskell, Nim, Lua, X86 ASM]
 )
 
 
@@ -482,12 +490,10 @@
   left-column-width: 1cm,
   left-content: [#strong[BS]],
   middle-content: [
-    #strong[Georgia Tech], Computer Science \(System Architecture & Information Networks\)
+    #strong[Georgia Tech], Computer Science \(Threads: #strong[System Architecture & Information Networks]\) \(GPA: 3.63\)
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Junior standing \(60+ credits\) \(Graduating Next Year\)])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Relevant coursework: DSA, OOP, Program Design, Computer Architecture],)
+    #v(design-highlights-top-margin);#highlights([Junior by Standing \(60+ credits\)],[Relevant Courses: #strong[DSA, OOP, Program Organization + Design, Computer Architecture]],)
   ],
   right-content: [
     Atlanta, GA
@@ -496,37 +502,19 @@ Aug 2025 – Now
   ],
 )
 
-#v(design-entries-vertical-space-between-entries)
-// YES DATE, YES DEGREE
-#three-col-entry(
-  left-column-width: 1cm,
-  left-content: [#strong[HS]],
-  middle-content: [
-    #strong[Kennesaw Mountain High School], High School Diploma
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([STAR Student \(highest SAT\); Top of my class \(depending on the metric\)],)
-  ],
-  right-content: [
-    Kennesaw, GA
-
-Aug 2022 – May 2025
-  ],
-)
 
 
-
-== Experience
+== Relevant Experience
 
 
 #two-col-entry(
   left-content: [
-    #strong[Masjid Suffah — Maktab Portal], Full-stack Developer \(Volunteer\)
+    #strong[Masjid Suffah — Maktab Portal]: Full-stack Developer \(Volunteer\)
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Built full-stack portal \(Supabase, SvelteKit, ShadcnUI \/ Tailwind\) to manage enrollments and custom payment logic for \~60 students])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Built #strong[full-stack portal] to manage enrollments and custom payment logic for #strong[\~60 students]])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Automated admin workflows and reduced manual processing to nearly nothing.],[Implemented role-based access, reporting, and documentation. #link("github.com/Mr-Thack/suffah")[Repo Here]],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Automated admin workflows and #strong[reduced manual processing to nearly nothing.]],[Implemented role-based access, reporting, and documentation using #strong[Modern Scalable Technologies]],)
   ],
   right-content: [
     Kennesaw, GA
@@ -540,12 +528,12 @@ Summer of 2025
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Cobb County School District], Automation Engineer \(Sort of an Intern, but not exactly\)
+    #strong[Cobb County School District]: Automation Engineer \(Sort of an Intern, but not exactly\)
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Authored Python pipeline calling the OpenAI API to sort, categorize, and summarize enhancement requests for the CTLS platform.])], column-gutter: 0cm)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Wrote Python pipeline calling the OpenAI API to sort, categorize, and summarize enhancement requests for the CTLS platform.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Saved \~4 hrs\/week \(\~130 hrs\/year\) of manual review.],[Packaged a reproducible script and delivered an #link("https://GitHub.com/Mr-Thack/SummarizerPresentation")[internal presentation]],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([#strong[Saved \~130 hrs\/year] of manual review while retaining #strong[99\%+ accuracy\/validity with AI]],[Made #strong[quasi-reasoning pipeline \(before widespread reasoning models\)] while costing <#strong[10 cents\/month]],[Packaged a reproducible script and delivered an #link("https://GitHub.com/Mr-Thack/SummarizerPresentation")[internal presentation]],)
   ],
   right-content: [
     514 Glover Sreet SE, Marietta, GA
@@ -559,12 +547,31 @@ Fall of 2024
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Masjid Suffah — Website], Ongoing Maintainer \(Volunteer\)
+    #strong[MQM Party of Pakistan]: Frontend Dev \(Paid\)
+    #v(-design-text-leading)
+
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Donation website for the current leader of the MQM Political Party of Pakistan.])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Designed #strong[globally-cached], #strong[mobile-responsive], #strong[semi-dynamic] site while dealing with #strong[multi-media]],[Integrated with payment processor \(Stripe\) to handle #strong[large-scale high-frequency transactions]],[#emph[Note: Site might temporarily be offline soon due to new stipulations from payment provider;] #link("https://github.com/Mr-Thack/AltafHussain90")[Code Here]],)
+  ],
+  right-content: [
+    Kennesaw, GA
+
+Summer of 2024
+
+#link("https://altafhussain90.org/")[altafhussain90.org],
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[Masjid Suffah — Website]: Ongoing Maintainer \(Volunteer\)
     #v(-design-text-leading)
 
     #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Maintain information and prayer timings website])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to ensure 100\% uptime and reliability.],[Performed bug fixes and incremental feature updates.],)
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to #strong[ensure 100\% uptime and reliability].],[Performed bug fixes and incremental feature updates.],)
   ],
   right-content: [
     Kennesaw, GA
@@ -575,96 +582,37 @@ June 2024 – Now
   ],
 )
 
-#v(design-entries-vertical-space-between-entries)
+
+
+== Relevant Projects
+
+
 #two-col-entry(
   left-content: [
-    #strong[MS Cleaners], Clerk + Machine Maintenance
+    #strong[Kerplunk]: Real-time messaging & group management platform for classrooms
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Handled customer interactions, inventory tagging, and light machine maintenance])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Streamlined turnaround through improving workflow and repairing machinery.],[Became proficient in handling customers],)
+    #v(design-highlights-top-margin);#highlights([Backend lead \(clean REST API, Websockets with REST backup, custom Protobuf-backed DB, homebuilt Alpine server\) + functional Frontend work \(non-design\)],[Implemented #strong[real-time notifications, messaging and groups] while #strong[running quickly on ancient hardware]],)
   ],
   right-content: [
-    4047 Canton Road,\
+    Summer-Fall of 2023
 
- Marietta, GA
-
-Summer of 2024,
+#link("https://github.com/Mr-Thack/kerplunk")[github.com/Mr-Thack/kerplunk],
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Computer Repairs Plus], Computer Technician
+    #strong[SenaTowing]: Volunteered to build mobile-first website for local emergency towing business
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Diagnosed and restored desktops and laptops, doing software fixes, hardware swaps, upgrades, and refurbishing for reuse and recycling.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Processed 30+ rigs a day quickly and correctly],[Was given a paid return offer],)
+    #v(design-highlights-top-margin);#highlights([Built #strong[static, SEO-friendly, rapid-loading, mobile-responsive site]],[#strong[Modern and Attractive UI + Hyper-Streamlined UX] with #link("https://github.com/Mr-Thack/SenaTowing")[code here]],)
   ],
   right-content: [
-    3327 Cobb Pkwy NW, Acworth, GA
+    Summer of 2025
 
-Summer of 2022
-
-#link("https://github.com")[github.com],
-  ],
-)
-
-
-
-== Projects
-
-
-#two-col-entry(
-  left-content: [
-    #strong[Kerplunk]
-  ],
-  right-content: [
-    Summer to Fall of 2023
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Real-time messaging & group management platform for classrooms.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Backend lead \(FastAPI, custom Protobuf-backed DB, deployed on self-hosted and homebuilt Alpine Machine\)],[Frontend work \(mostly functional; not design\)],[Integrated real-time notifications and group management; repo: github.com\/Mr-Thack\/kerplunk],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Summarizer \/ SummarizerPresentation]
-  ],
-  right-content: [
-    Fall of 2024
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [NLP pipeline and presentation demo for county enhancement request automation.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([NLP demo + Reveal.js presentation demonstrating the automation pipeline used for Cobb County School District; repo: github.com\/Mr-Thack\/SummarizerPresentation],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[AICAD \(prototype\)]
-  ],
-  right-content: [
-    Sept 2025 – Now
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Prototype AI-assisted CAD sketch → render pipeline.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Sketch-based CAD prototype that calls OpenRouter + large multimodal model \(demo pipeline\); listed as a research prototype; repo: github.com\/Mr-Thack\/AICAD],)
+#link("https://SenaTowing.com/")[SenaTowing.com],
   ],
 )
 
@@ -672,97 +620,23 @@ Summer of 2022
 
 #one-col-entry(
   content: [
-    #strong[SenaTowing]
+    #strong[Other Projects]: Please follow the #link("https://github.com/Mr-Thack")[link to my GitHub] to see my other projects or to see these in more depth
 
-    #v(-design-text-leading)
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Mobile-responsive website for local towing business.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Built SEO-friendly, fast-loading, mobile-first site for emergency towing],[Attractive but streamlined designed],[repo: github.com\/Mr-Thack\/SenaTowing],)
+    
   ],
 )
 
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[ManimTTS-Testing]
-  ],
-  right-content: [
-    Fall of 2025
-  ],
-)
+
+
+== Other Experiences
 #one-col-entry(
   content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Manim extension to sync TTS audio with animations.])], column-gutter: 0cm)
 
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Extension integrates local TTS models with Manim to produce narrated, timestamped animations],[repo: github.com\/Mr-Thack\/ManimTTS-Testing],)
+
++ #strong[Clerk + Machine Maintenance] at MS Cleaners during #strong[Summer of 2024]. Handled customer interactions, inventory, and some machine maintenance. #strong[Streamlined workflow by repairing machinery + modernizing].
++ #strong[Computer Repair Technician] at Computers Repair Plus during #strong[Summer of 2022]. Diagnosed and restored #strong[30+ desktops and laptops daily].
+ Software fixes, hardware swaps\/upgrades, refurbishing for reuse, and recycling.
+
   ],
 )
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Silogue]
-  ],
-  right-content: [
-    Spring of 2023
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Lightweight webserver framework in Nim focused on developer experience.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Designed for quick onboarding and small services],[Emphasizes macro-based ergonomics and performance],[repo: github.com\/Mr-Thack\/Silogue],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[SHA256VK \(research\/prototype\)]
-  ],
-  right-content: [
-    Fall of 2025
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [SHA256 implementation using Vulkan + C++ \(Kompute\).])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Exploratory implementation \(performance\/accuracy still under investigation\)],[repo: github.com\/Mr-Thack\/SHA256VK],)
-  ],
-)
-
-
-
-== Skills
-
-
-#one-col-entry(
-  content: [#strong[Languages:] JavaScript\/TypeScript, SQL, Python, Bash, C++, X86 ASM, Nim, Haskell]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Frameworks & Tools:] SvelteKit, FastAPI, Supabase, Tailwind \/ ShadcnUI, Bulma, Bootstrap, Reveal.js, Manim, Kompute, Docker, Git, Linux]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[AI \/ NLP:] OpenAI API, LLM prompt engineering, Ollama Configuration, NLP pipelines, local TTS models]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Deployment & Ops:] GoDaddy, Netlify, self-hosted servers, CI\/CD basics, performance debugging]
-)
-
-
-== Extracurricular Activities
-
-
-#one-col-entry(
-  content: [- Volunteer web developer \/ maintainer for local Masjid projects \(site maintenance, payment portal, deployment\).],
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [- I'm the computer repair guy \(fixed 5+ friends' laptops\/computers\)],
-)
-
 

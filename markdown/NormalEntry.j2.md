@@ -1,4 +1,4 @@
-## <<entry.name>>
+## <<entry.name>> - <<entry.summary>>
 
 ((* if entry.date_string *))- <<entry.date_string>>
 ((* endif *))
