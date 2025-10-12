@@ -3,7 +3,7 @@
 
 #let name = "AbdulMuqeet Mohammed"
 #let locale-catalog-page-numbering-style = context { "AbdulMuqeet Mohammed - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Sept 2025"
+#let locale-catalog-last-updated-date-style = "Last updated in Oct 2025"
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.4em
@@ -19,7 +19,7 @@
 #let design-section-titles-font-size = 1.4em
 #let design-section-titles-type = "with-parial-line"
 #let design-section-titles-vertical-space-above = 0.5cm
-#let design-section-titles-vertical-space-below = 0.25cm
+#let design-section-titles-vertical-space-below = 0.3cm
 #let design-section-titles-small-caps = false
 #let design-links-use-external-link-icon = true
 #let design-text-font-size = 10pt
@@ -30,30 +30,31 @@
 #let design-header-photo-width = 3.5cm
 #let design-header-use-icons-for-connections = true
 #let design-header-name-font-family = "Source Sans 3"
-#let design-header-name-font-size = 30pt
+#let design-header-name-font-size = 20pt
 #let design-header-name-bold = true
 #let design-header-connections-font-family = "Source Sans 3"
-#let design-header-vertical-space-between-name-and-connections = 0.3cm
-#let design-header-vertical-space-between-connections-and-first-section = 0.3cm
+#let design-header-vertical-space-between-name-and-connections = 0.6cm
+#let design-header-vertical-space-between-connections-and-first-section = 0.6cm
 #let design-header-use-icons-for-connections = true
-#let design-header-horizontal-space-between-connections = 1cm
+#let design-header-horizontal-space-between-connections = 2cm
 #let design-header-separator-between-connections = ""
 #let design-header-alignment = center
 #let design-highlights-summary-left-margin = 0cm
 #let design-highlights-bullet = "•"
-#let design-highlights-top-margin = 0.25cm
-#let design-highlights-left-margin = 0.4cm
+#let design-highlights-top-margin = 0.3cm
+#let design-highlights-left-margin = 0.25cm
 #let design-highlights-vertical-space-between-highlights = 0.25cm
 #let design-highlights-horizontal-space-between-bullet-and-highlights = 0.5em
 #let design-entries-vertical-space-between-entries = 1em
-#let design-entries-date-and-location-width = 3.0cm
+#let design-entries-date-and-location-width = 3.25cm
 #let design-entries-allow-page-break-in-entries = true
 #let design-entries-horizontal-space-between-columns = 0.1cm
 #let design-entries-left-and-right-margin = 0.1cm
 #let design-page-top-margin = 1cm
 #let design-page-bottom-margin = 1cm
-#let design-page-left-margin = 1cm
-#let design-page-right-margin = 1cm
+#let design-page-left-margin = 0.8cm
+#let design-page-right-margin = 0.8cm
+#let design-show-citizenship = true
 #let design-page-show-last-updated-date = true
 #let design-page-show-page-numbering = false
 #let design-links-underline = true
@@ -292,7 +293,13 @@
   )
 }
 
-#let connections(connections-list) = context {
+#let connections(con-list) = context {
+  let connections-list = con-list
+
+  if (design-show-citizenship) {
+    connections-list.push([#fa-icon("passport", size: 0.9em) #h(0.05cm)US Citizen])
+  }
+
   set text(fill: design-colors-connections, font: design-header-connections-font-family)
   set par(leading: design-text-leading*1.7, justify: false)
   let list-of-connections = ()
@@ -305,7 +312,7 @@
   while (starting-index < connections-list.len()) {
     let left-sum-right-margin
     if type(page.margin) == "dictionary" {
-      left-sum-right-margin = page.margin.left + page.margin.right
+      left-sum-right-margin = (page.margin.left + page.margin.right) * 4
     } else {
       left-sum-right-margin = page.margin * 4
     }
@@ -455,31 +462,11 @@
   [#box(original-link("mailto:AbdulMuqeet.Mohammed@yahoo.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)AbdulMuqeet.Mohammed\@yahoo.com])],
   [#box(original-link("tel:+1-470-272-4878")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(470\) 272-4878])],
   [#box(original-link("https://github.com/Mr-Thack")[#fa-icon("link", size: 0.9em) #h(0.05cm)github.com\/Mr-Thack])],
-  [#box(original-link("https://linkedin.com/in/AbdulMuqeet Mohammed")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)AbdulMuqeet Mohammed])],
+  [#box(original-link("https://linkedin.com/in/AbdulMuqeet-Mohammed")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)AbdulMuqeet-Mohammed])],
   [#box(original-link("https://github.com/Mr-Thack")[#fa-icon("github", size: 0.9em) #h(0.05cm)Mr-Thack])],
 )
 #connections(connections-list)
 
-
-
-== Profile
-
-
-#one-col-entry(
-  content: [CS Student \(#strong[Junior \@ GT]\) focused on #strong[Fullstack Web Dev] + #strong[AI Integration], quickly and efficiently shipping sites to reduce manual labor.]
-)
-
-
-== Skills
-
-
-#one-col-entry(
-  content: [#strong[Excellent]: SvelteKit, FastAPI, Supabase, SQL, Tailwind, Shadcn, OpenRouter + OpenAI, Docker, Git, Linux, Netlify, TS, Bash, C\/C++]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Proficient]: HTML\/CSS, NextJS, React, Django, Node.js, PostgreSQL, Firebase, PHP, Go, Rust, Java, JQuery, Haskell, Nim, Lua, X86 ASM]
-)
 
 
 == Education
@@ -490,18 +477,30 @@
   left-column-width: 1cm,
   left-content: [#strong[BS]],
   middle-content: [
-    #strong[Georgia Tech], Computer Science \(Threads: #strong[System Architecture & Information Networks]\) \(GPA: 3.63\)
+    #strong[Georgia Tech], #strong[Computer Science] \(Threads: #emph[System Architecture & Information Networks]\) \(GPA: 3.63\)
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Junior by Standing \(60+ credits\)],[Relevant Courses: #strong[DSA, OOP, Program Organization + Design, Computer Architecture]],)
+    #v(design-highlights-top-margin);#highlights([Junior by Standing \(60+ credits\)],[#strong[Relevant Courses]: Data Structures and Algorithms, Object-Oriented Programming, Program Organization + Design, Computer Architecture, Linear Algebra, Combinatorics, Differential Equations],)
   ],
   right-content: [
     Atlanta, GA
 
-Aug 2025 – Now
+Aug 2025 – May 2027
   ],
 )
 
+
+
+== Technical Skills
+
+
+#one-col-entry(
+  content: [#strong[Highly Proficient]: SvelteKit, FastAPI, Supabase, SQL, Tailwind, Shadcn, OpenRouter + OpenAI, Git, Linux, Netlify, Python, TS, Bash]
+)
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [#strong[Proficient]: HTML\/CSS, NextJS, React, Django, Node.js, PostgreSQL, Docker, Firebase, PHP, Go, Rust, Java, JQuery, Haskell, Lua, C\/C++]
+)
 
 
 == Relevant Experience
@@ -509,17 +508,15 @@ Aug 2025 – Now
 
 #two-col-entry(
   left-content: [
-    #strong[Masjid Suffah — Maktab Portal]: Full-stack Developer \(Volunteer\)
+    #strong[Masjid Suffah — Maktab Portal]: #emph[Full-stack Developer \(Volunteer\)]
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Built #strong[full-stack portal] to manage enrollments and custom payment logic for #strong[\~60 students]])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Automated admin workflows and #strong[reduced manual processing to nearly nothing.]],[Implemented role-based access, reporting, and documentation using #strong[Modern Scalable Technologies]],)
+    #v(design-highlights-top-margin);#highlights([Built #strong[full-stack web portal] with role-based access \(student, teacher, admin\) to manage K-12 Islamic education program enrollments and tiered payment plans for #strong[\~60 students \/ term]],[Automated admin workflows, #strong[cutting manual processing from \~50 hours to] <#strong[1 hour] per term],[Implemented and documented using #strong[scalable, cloud-capable technologies], such as Supabase \(Distributed PostgreSQL\) and Netlify \(Edge CDN\) and #strong[modern frontend libraries] \(SvelteKit, Shadcn, and Tailwind\)],)
   ],
   right-content: [
     Kennesaw, GA
 
-Summer of 2025
+Summer 2025
 
 #link("https://masjidsuffah.netlify.app/maktab")[masjidsuffah.netlify.app/maktab],
   ],
@@ -528,17 +525,15 @@ Summer of 2025
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Cobb County School District]: Automation Engineer \(Sort of an Intern, but not exactly\)
+    #strong[Cobb County School District]: #emph[Automation Engineer \(Intern\)]
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Wrote Python pipeline calling the OpenAI API to sort, categorize, and summarize enhancement requests for the CTLS platform.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([#strong[Saved \~130 hrs\/year] of manual review while retaining #strong[99\%+ accuracy\/validity with AI]],[Made #strong[quasi-reasoning pipeline \(before widespread reasoning models\)] while costing <#strong[10 cents\/month]],[Packaged a reproducible script and delivered an #link("https://GitHub.com/Mr-Thack/SummarizerPresentation")[internal presentation]],)
+    #v(design-highlights-top-margin);#highlights([Wrote Python pipeline calling the OpenAI API \(using GPT-4o-mini\) to sort, categorize, and summarize enhancement requests \(identified bugs + new features\) for the CTLS platform, pulled from Microsoft Forms],[#strong[Saved \~130 hrs\/year] of manual review while retaining #strong[99\%+ accuracy and validity with AI]],[Made #strong[quasi-reasoning pipeline \(before widespread reasoning models\)] while costing <#strong[10 cents\/month]],[Packaged a reproducible script and delivered an #link("https://GitHub.com/Mr-Thack/SummarizerPresentation")[internal presentation]],)
   ],
   right-content: [
-    514 Glover Street SE, Marietta, GA
+    Marietta, GA
 
-Fall of 2024
+Fall 2024
 
 #link("https://github.com/Mr-Thack/Summarizer")[github.com/Mr-Thack/Summarizer],
   ],
@@ -547,17 +542,15 @@ Fall of 2024
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[MQM Party of Pakistan]: Frontend Dev \(Paid\)
+    #strong[MQM Party of Pakistan]: #emph[Frontend Dev \(Paid\)]
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Donation website for the current leader of the MQM Political Party of Pakistan.])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Designed #strong[globally-cached], #strong[mobile-responsive], #strong[semi-dynamic] site while dealing with #strong[multi-media]],[Integrated with payment processor \(Stripe\) to handle #strong[large-scale high-frequency transactions]],[#emph[Note: Site might temporarily be offline soon due to new stipulations from payment provider;] #link("https://github.com/Mr-Thack/AltafHussain90")[Code Here]],)
+    #v(design-highlights-top-margin);#highlights([Designed #strong[mobile-responsive, globally-cached donation website] handling #strong[multimedia and semi-dynamic] content for the current MQM Party leader],[Integrated payment processor \(Stripe\) to handle #strong[large-scale high-frequency transactions;] #emph[site temporarily offline due to new stipulations from payment provider] \(#link("https://github.com/Mr-Thack/AltafHussain90")[Code here]\)],)
   ],
   right-content: [
     Kennesaw, GA
 
-Summer of 2024
+Summer 2024
 
 #link("https://altafhussain90.org/")[altafhussain90.org],
   ],
@@ -566,17 +559,15 @@ Summer of 2024
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Masjid Suffah — Website]: Ongoing Maintainer \(Volunteer\)
+    #strong[Masjid Suffah — Website]: #emph[Ongoing Maintainer \(Volunteer\)]
     #v(-design-text-leading)
 
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Maintain information and prayer timings website])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to #strong[ensure 100\% uptime and reliability].],[Performed bug fixes and incremental feature updates.],)
+    #v(design-highlights-top-margin);#highlights([Maintain information and prayer timings website while incorporating #strong[attendee feedback]],[Fix bugs, update features, and resolve legacy PHP\/GoDaddy issues to #strong[ensure 100\% uptime]],)
   ],
   right-content: [
     Kennesaw, GA
 
-June 2024 – Now
+Summer 2024-Present
 
 #link("https://masjidsuffah.com")[masjidsuffah.com],
   ],
@@ -584,18 +575,18 @@ June 2024 – Now
 
 
 
-== Relevant Projects
+== Programming Projects
 
 
 #two-col-entry(
   left-content: [
-    #strong[Kerplunk]: Real-time messaging & group management platform for classrooms
+    #strong[Kerplunk]: #emph[Real-time messaging and group management platform for clubs and classrooms, with safety for kids]
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Backend lead \(clean REST API, Websockets with REST backup, custom Protobuf-backed DB, homebuilt Alpine server\) + functional Frontend work \(non-design\)],[Implemented #strong[real-time notifications, messaging and groups] while #strong[running quickly on ancient hardware]],)
+    #v(design-highlights-top-margin);#highlights([#strong[Backend lead] \(clean REST API, Websockets with REST backup, custom Protobuf-backed DB\) + #strong[Infrastructure Admin] \(homebuilt Alpine server, DNS for domain\/email, IP config\) + #strong[functional Frontend] work \(non-design\)],[Implemented #strong[real-time notifications, messaging and groups] while #strong[running quickly on ancient hardware]],)
   ],
   right-content: [
-    Summer-Fall of 2023
+    Summer—Fall 2023
 
 #link("https://github.com/Mr-Thack/kerplunk")[github.com/Mr-Thack/kerplunk],
   ],
@@ -604,10 +595,10 @@ June 2024 – Now
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[SenaTowing]: Volunteered to build mobile-first website for local emergency towing business
+    #strong[SenaTowing]: #emph[Volunteered to build mobile-first website for local emergency towing service.]
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Built #strong[static, SEO-friendly, rapid-loading, mobile-responsive site]],[#strong[Modern and Attractive UI + Hyper-Streamlined UX] with #link("https://github.com/Mr-Thack/SenaTowing")[code here]],)
+    #v(design-highlights-top-margin);#highlights([Built #strong[static, SEO-friendly, rapid-loading, mobile-responsive site], now \#1 locally on Google],[Designed #strong[Modern and Attractive UI + Hyper-Streamlined UX] for fast, clear service requests \(#link("https://github.com/Mr-Thack/SenaTowing")[Code here]\)],)
   ],
   right-content: [
     Summer of 2025
@@ -620,7 +611,7 @@ June 2024 – Now
 
 #one-col-entry(
   content: [
-    #strong[Other Projects]: Please follow the #link("https://github.com/Mr-Thack")[link to my GitHub] to see my other projects or to see these in more depth
+    #strong[Other Projects]: #emph[Please follow the #link("https://github.com/Mr-Thack")[link to my GitHub] to see my other projects or to examine these in more depth]
 
     
   ],
@@ -628,14 +619,14 @@ June 2024 – Now
 
 
 
-== Other Experiences
+== Additional Skills & Experiences
 #one-col-entry(
   content: [
 
 
-+ #strong[Clerk + Machine Maintenance] at MS Cleaners during #strong[Summer of 2024]. Handled customer interactions, inventory, and some machine maintenance. #strong[Streamlined workflow by repairing machinery + modernizing].
-+ #strong[Computer Repair Technician] at Computers Repair Plus during #strong[Summer of 2022]. Diagnosed and restored #strong[30+ desktops and laptops daily].
- Software fixes, hardware swaps\/upgrades, refurbishing for reuse, and recycling.
++ #strong[Languages:] English \(Native\), Urdu \(Native\), Hindi \(Conversational\), Arabic \(Intermediate+\), Spanish \(Advanced\)
++ #strong[Mechanical Arts & DIY:] Motorcycles & small engines, tinkering in the garage, minor home electrical\/plumbing\/AC repairs, 3D printing
++ #strong[Interests & Hobbies:] Skateboarding, cars, electronics, Rubik's cubes, playing with my little sister, reading
 
   ],
 )

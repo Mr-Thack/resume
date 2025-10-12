@@ -63,6 +63,7 @@
 #let design-page-bottom-margin = <<design.page.bottom_margin>>
 #let design-page-left-margin = <<design.page.left_margin>>
 #let design-page-right-margin = <<design.page.right_margin>>
+#let design-show-citizenship = <<design.show_citizenship|lower>>
 #let design-page-show-last-updated-date = <<design.page.show_last_updated_date|lower>>
 #let design-page-show-page-numbering = <<design.page.show_page_numbering|lower>>
 #let design-links-underline = <<design.links.underline|lower>>
@@ -301,7 +302,13 @@
   )
 }
 
-#let connections(connections-list) = context {
+#let connections(con-list) = context {
+  let connections-list = con-list
+
+  if (design-show-citizenship) {
+    connections-list.push([#fa-icon("passport", size: 0.9em) #h(0.05cm)US Citizen])
+  }
+
   set text(fill: design-colors-connections, font: design-header-connections-font-family)
   set par(leading: design-text-leading*1.7, justify: false)
   let list-of-connections = ()
@@ -314,7 +321,7 @@
   while (starting-index < connections-list.len()) {
     let left-sum-right-margin
     if type(page.margin) == "dictionary" {
-      left-sum-right-margin = page.margin.left + page.margin.right
+      left-sum-right-margin = (page.margin.left + page.margin.right) * 4
     } else {
       left-sum-right-margin = page.margin * 4
     }

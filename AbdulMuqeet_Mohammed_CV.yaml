@@ -6,97 +6,108 @@ cv:
   website: https://github.com/Mr-Thack
   social_networks:
     - network: LinkedIn
-      username: AbdulMuqeet Mohammed
+      username: AbdulMuqeet-Mohammed
     - network: GitHub
       username: Mr-Thack
   sections:
-    profile:
-      - 'CS Student (**Junior @ GT**) focused on **Fullstack Web Dev** + **AI Integration**, quickly and efficiently shipping sites to reduce manual labor.'
-    skills:
-      - '**Excellent**: SvelteKit, FastAPI, Supabase, SQL, Tailwind, Shadcn, OpenRouter + OpenAI, Docker, Git, Linux, Netlify, TS, Bash, C/C++' 
-      - '**Proficient**: HTML/CSS, NextJS, React, Django, Node.js, PostgreSQL, Firebase, PHP, Go, Rust, Java, JQuery, Haskell, Nim, Lua, X86 ASM'
     education:
       - institution: Georgia Tech
-        area: 'Computer Science (Threads: **System Architecture & Information Networks**) (GPA: 3.63)'
+        area: '**Computer Science** (Threads: *System Architecture & Information Networks*) (GPA: 3.63)'
         degree: BS
         start_date: 2025-08
-        end_date: present
+        end_date: 2027-05
         location: Atlanta, GA
         highlights:
           - 'Junior by Standing (60+ credits)'
-          - 'Relevant Courses: **DSA, OOP, Program Organization + Design, Computer Architecture**'
+          - '**Relevant Courses**: Data Structures and Algorithms, Object-Oriented Programming, Program Organization + Design, Computer Architecture, Linear Algebra, Combinatorics, Differential Equations'
+    technical_skills:
+      - '**Highly Proficient**: SvelteKit, FastAPI, Supabase, SQL, Tailwind, Shadcn, OpenRouter + OpenAI, Git, Linux, Netlify, Python, TS, Bash' 
+      - '**Proficient**: HTML/CSS, NextJS, React, Django, Node.js, PostgreSQL, Docker, Firebase, PHP, Go, Rust, Java, JQuery, Haskell, Lua, C/C++'
     relevant_experience:
       - company: Masjid Suffah — Maktab Portal
         position: Full-stack Developer (Volunteer)
-        date: Summer of 2025
+        date: Summer 2025
         location: Kennesaw, GA
         url: 'https://masjidsuffah.netlify.app/maktab'
-        summary: 'Built **full-stack portal** to manage enrollments and custom payment logic for **~60 students**'
         highlights:
-          - 'Automated admin workflows and **reduced manual processing to nearly nothing.**'
-          - 'Implemented role-based access, reporting, and documentation using **Modern Scalable Technologies**'
+          - 'Built **full-stack web portal** with role-based access (student, teacher, admin) to manage K-12 Islamic education program enrollments and tiered payment plans for **~60 students / term**'
+          - 'Automated admin workflows, **cutting manual processing from ~50 hours to** <**1 hour** per term'
+          - 'Implemented and documented using **scalable, cloud-capable technologies**, such as Supabase (Distributed PostgreSQL) and Netlify (Edge CDN) and **modern frontend libraries** (SvelteKit, Shadcn, and Tailwind)'
       - company: Cobb County School District
-        position: Automation Engineer (Sort of an Intern, but not exactly)
-        date: Fall of 2024
-        location: 514 Glover Street SE, Marietta, GA
+        position: Automation Engineer (Intern)
+        date: Fall 2024
+        location: Marietta, GA
         url: 'https://github.com/Mr-Thack/Summarizer'
-        summary: 'Wrote Python pipeline calling the OpenAI API to sort, categorize, and summarize enhancement requests for the CTLS platform.'
         highlights:
-          - '**Saved ~130 hrs/year** of manual review while retaining **99%+ accuracy/validity with AI**'
+          - 'Wrote Python pipeline calling the OpenAI API (using GPT-4o-mini) to sort, categorize, and summarize enhancement requests (identified bugs + new features) for the CTLS platform, pulled from Microsoft Forms'
+          - '**Saved ~130 hrs/year** of manual review while retaining **99%+ accuracy and validity with AI**'
           - 'Made **quasi-reasoning pipeline (before widespread reasoning models)** while costing <**10 cents/month**'
           - 'Packaged a reproducible script and delivered an [internal presentation](https://GitHub.com/Mr-Thack/SummarizerPresentation)'
       - company: MQM Party of Pakistan
         position: Frontend Dev (Paid)
-        date: Summer of 2024
+        date: Summer 2024
         location: Kennesaw, GA 
         url: 'https://altafhussain90.org/'
-        summary: Donation website for the current leader of the MQM Political Party of Pakistan.
         highlights:
-          - 'Designed **globally-cached**, **mobile-responsive**, **semi-dynamic** site while dealing with **multi-media**'
-          - 'Integrated with payment processor (Stripe) to handle **large-scale high-frequency transactions**'
-          - '*Note: Site might temporarily be offline soon due to new stipulations from payment provider;* [Code Here](https://github.com/Mr-Thack/AltafHussain90)'
+          - 'Designed **mobile-responsive, globally-cached donation website** handling **multimedia and semi-dynamic** content for the current MQM Party leader'
+          - 'Integrated payment processor (Stripe) to handle **large-scale high-frequency transactions;** *site temporarily offline due to new stipulations from payment provider* ([Code here](https://github.com/Mr-Thack/AltafHussain90))'
       - company: Masjid Suffah — Website
         position: Ongoing Maintainer (Volunteer)
-        date:
-        start_date: 2024-06
-        end_date: present
+        date: Summer 2024-Present
         location: Kennesaw, GA
         url: 'https://masjidsuffah.com'
-        summary: Maintain information and prayer timings website
         highlights:
-          - 'Resolved PHP migration issues, rewrote legacy modules, and fixed GoDaddy deployment problems to **ensure 100% uptime and reliability**.'
-          - 'Performed bug fixes and incremental feature updates.'
-    relevant_projects:
+          - 'Maintain information and prayer timings website while incorporating **attendee feedback**'
+          - 'Fix bugs, update features, and resolve legacy PHP/GoDaddy issues to **ensure 100% uptime**'
+    programming_projects:
       # I couldn't get the custom mappings to work in Normal Mode
       # So, I've just reused Experience Mode
       - company: Kerplunk
-        date: Summer-Fall of 2023
+        date: Summer—Fall 2023
         url: https://github.com/Mr-Thack/kerplunk
-        position: 'Real-time messaging & group management platform for classrooms.'
+        position: 'Real-time messaging and group management platform for clubs and classrooms, with safety for kids'
         highlights:
-          - 'Backend lead (clean REST API, Websockets with REST backup, custom Protobuf-backed DB, homebuilt Alpine server) + functional Frontend work (non-design)'
+          - '**Backend lead** (clean REST API, Websockets with REST backup, custom Protobuf-backed DB) + **Infrastructure Admin** (homebuilt Alpine server, DNS for domain/email, IP config) + **functional Frontend** work (non-design)'
           - 'Implemented **real-time notifications, messaging and groups** while **running quickly on ancient hardware**'
       - company: SenaTowing
         date: Summer of 2025
         url: 'https://SenaTowing.com/'
-        position: 'Volunteered to build mobile-first website for local emergency towing business.'
+        position: 'Volunteered to build mobile-first website for local emergency towing service.'
         highlights:
-          - 'Built **static, SEO-friendly, rapid-loading, mobile-responsive site**'
-          - '**Modern and Attractive UI + Hyper-Streamlined UX** with [code here](https://github.com/Mr-Thack/SenaTowing)'
+          - 'Built **static, SEO-friendly, rapid-loading, mobile-responsive site**, now #1 locally on Google'
+          - 'Designed **Modern and Attractive UI + Hyper-Streamlined UX** for fast, clear service requests ([Code here](https://github.com/Mr-Thack/SenaTowing))'
       - company: Other Projects
-        position: Please follow the [link to my GitHub](https://github.com/Mr-Thack) to see my other projects or to see these in more depth
-    other_experiences:
-      - number: "**Clerk + Machine Maintenance** at MS Cleaners during **Summer of 2024**. Handled customer interactions, inventory, and some machine maintenance. **Streamlined workflow by repairing machinery + modernizing**."
-      - number: "**Computer Repair Technician** at Computers Repair Plus during **Summer of 2022**. Diagnosed and restored **30+ desktops and laptops daily**.\n Software fixes, hardware swaps/upgrades, refurbishing for reuse, and recycling."  
+        position: Please follow the [link to my GitHub](https://github.com/Mr-Thack) to see my other projects or to examine these in more depth
+    # Change this section to Additional Skills & Experiences
+    # The goal, Mr. Fowler said, is to make me more memorable than my skills
+    # Because he said that they'll get many people who are competent, especially from Tech,
+    # but I've gotta differentiate myself from them somehow.
+    #
+    # He said to include:
+    # Languages,
+    # Skills (one of which he suggested should be listed as Mechanical Arts or some other fancy wording for it),
+    # Interests (his example had "App Development, Design, Traveling, Architecture" listed)
+    # Well, my interests are Skateboarding and I guess I could say Rubix Cubes
+    # He also said that he thought my little sister's jeep story was good.
+    # So, he told me that I want them to think about the jeep when I leave and remember me with that.
+    # But, I'd want it to be something that they'd like ask me about and then I'd weave in that story.
+    # For example, he said, if I had put "tinkering in the garage" or something like that,
+    # then they'd naturally ask me what I tinker on, and I could bring up her jeep.
+      
+    additional_skills_&_experiences:
+      - number: "**Languages:** English (Native), Urdu (Native), Hindi (Conversational), Arabic (Intermediate+), Spanish (Advanced)"
+      - number: "**Mechanical Arts & DIY:** Motorcycles & small engines, tinkering in the garage, minor home electrical/plumbing/AC repairs, 3D printing"
+      - number: "**Interests & Hobbies:** Skateboarding, cars, electronics, Rubik's cubes, playing with my little sister, reading"
 
 design:
   theme: me
+  show_citizenship: true
   page:
     size: us-letter
     top_margin: 1cm
     bottom_margin: 1cm
-    left_margin: 1cm
-    right_margin: 1cm
+    left_margin: 0.8cm
+    right_margin: 0.8cm
     show_page_numbering: false 
     show_last_updated_date: true
   colors:
@@ -117,12 +128,12 @@ design:
     use_external_link_icon: true
   header:
     name_font_family: Source Sans 3
-    name_font_size: 30pt
+    name_font_size: 20pt
     name_bold: true
     photo_width: 3.5cm
-    vertical_space_between_name_and_connections: 0.3cm
-    vertical_space_between_connections_and_first_section: 0.3cm
-    horizontal_space_between_connections: 1cm
+    vertical_space_between_name_and_connections: 0.6cm
+    vertical_space_between_connections_and_first_section: 0.6cm
+    horizontal_space_between_connections: 2cm
     connections_font_family: Source Sans 3
     separator_between_connections: ''
     use_icons_for_connections: true
@@ -135,9 +146,9 @@ design:
     small_caps: false
     line_thickness: 0.5pt
     vertical_space_above: 0.5cm
-    vertical_space_below: 0.25cm
+    vertical_space_below: 0.3cm
   entries:
-    date_and_location_width: 3.0cm
+    date_and_location_width: 3.25cm
     left_and_right_margin: 0.1cm
     horizontal_space_between_columns: 0.1cm
     vertical_space_between_entries: 1em
@@ -147,8 +158,8 @@ design:
     show_time_spans_in: []
   highlights:
     bullet: •
-    top_margin: 0.25cm
-    left_margin: 0.4cm
+    top_margin: 0.3cm
+    left_margin: 0.25cm
     vertical_space_between_highlights: 0.25cm
     horizontal_space_between_bullet_and_highlight: 0.5em
     summary_left_margin: 0cm
@@ -175,7 +186,7 @@ design:
         DATE
         URL
     experience_entry:
-      main_column_first_row_template: '**COMPANY**: POSITION'
+      main_column_first_row_template: '**COMPANY**: *POSITION*'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
@@ -205,7 +216,7 @@ locale:
   months: months
   year: year
   years: years
-  present: Now 
+  present: Present 
   to: –
   abbreviations_for_months:
     - Jan
@@ -234,5 +245,5 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: '2025-09-28'
+  date: '2025-10-12'
   bold_keywords: []
