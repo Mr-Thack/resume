@@ -249,7 +249,7 @@ rendercv_settings:
   bold_keywords: []
   render_command:
     output_folder_name: output
-    pdf_path: "docs/AbdulMuqeet_Resume.pdf"
+    pdf_path: "docs/resume.pdf"
     html_path: "docs/index.html"
     dont_generate_html: false
     dont_generate_markdown: false
