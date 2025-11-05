@@ -247,3 +247,10 @@ locale:
 rendercv_settings:
   date: '2025-10-12'
   bold_keywords: []
+  render_command:
+    output_folder_name: output
+    pdf_path: "docs/AbdulMuqeet_Resume.pdf"
+    html_path: "docs/index.html"
+    dont_generate_html: false
+    dont_generate_markdown: false
+    dont_generate_png: false
